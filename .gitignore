@@ -1,0 +1,14 @@
+# Project artifacts
+venv/
+data/
+artifacts/
+outputs/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS metadata
+.DS_Store
+data/
+outputs/
